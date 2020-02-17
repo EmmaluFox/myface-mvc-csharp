@@ -1,25 +1,34 @@
 ﻿@using System.Data.Entity
+@using System.Net.Http
+@using Microsoft.AspNetCore.Mvc.Rendering
+@using Microsoft.EntityFrameworkCore
+@using MyFace.Controllers
 @using MyFace.Models.Database
 @using MyFace.Models.Request
 @using MyFace.Models.View
+@using MyFace.Repositories
+@model MyFace.Models.View.PostsViewModel
 @{
     Layout = "_Layout";
-
-    Post CreatePost()
-    {
-        Post newPost = new Post();
-        return newPost();
-    }
+    CreatePostRequestModel createPostRequestModel = new CreatePostRequestModel();
+    PostsController postsController = new PostsController(new PostsRepo(new MyFaceDbContext(new DbContextOptions<MyFaceDbContext>())), new UsersRepo(new MyFaceDbContext(new DbContextOptions<MyFaceDbContext>())), new InteractionsRepo(new MyFaceDbContext(new DbContextOptions<MyFaceDbContext>())) );
+    
 }
 
 <h1>MyFace New Post</h1>
 <article class="container">
-    <form>
+    <form method="post" action = "/posts/create">
+        
+        @{
+                                            
+        }
+        <label for="UserId">ID:</label><br>
+        <input type = "number" name = "UserId" id = "UserId"/><br/>
         <label for="message">Post:</label><br>
-        <textarea name = "message" id = "message"></textarea><br/>
+        <textarea name = "message" id = "message" action = @createPostRequestModel.Message></textarea><br/>
         <label for="imageUrl">Image Url:</label><br/>
-        <input type="text" id="imageUrl" name="imageUrl" value="Image Url..." /><br/>
-        <input type="submit" value="Submit">
+        <input type="text" id="imageUrl" name="imageUrl" placeholder="Image Url..."/><br/>
+        <input type="submit" value="Submit" onsubmit="@createPostRequestModel">
     </form>
  
 </article>

@@ -8,30 +8,20 @@
 
 @{
     Layout = "_Layout";
-    List<Post> postsList = new List<Post>();
-    Post testPost = new Post();
-    testPost.ImageUrl = "https://images.unsplash.com/photo-1581300134629-4c3a06a31948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80";
-    testPost.Message = "Cat page!";
-    
-    Post testPost2 = new Post();
-    testPost2.ImageUrl = "https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60";
-    testPost2.Message = "Kitten!";
-    postsList.Add(testPost);
-    postsList.Add(testPost2);
-    
-    
+
+
 } 
     <h1>MyFace Posts</h1>
 <article class="all_posts_container">
     <ol>
         @{
             <a href="/posts/create"><button type = "button">New Post</button></a> 
-            foreach (var post in postsList)
+            foreach (var post in Model.Posts)
             {
                 
                 <li>
                     <div class="post_container">
-                        <h2 class="post_title">@post.PostedBy</h2>
+                        <h2 class="post_title">@post.PostedBy.DisplayName</h2>
                         <img class="post_image" src=@post.ImageUrl alt="">
                         <p class="text_preview">
                             @post.Message
