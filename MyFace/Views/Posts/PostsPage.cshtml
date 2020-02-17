@@ -9,10 +9,8 @@
 <article class="all_posts_container">
     <ol>
         @{
-            <a href="/posts/create">
-                <button type="button">New Post</button>
-            </a>
-            foreach (var post in Model.Posts)
+            <button type="button" onclick="window.location.href='/posts/create'">New Post</button>
+        foreach (var post in Model.Posts)
             {
                 <li>
                     <div class="post_container">
@@ -21,7 +19,7 @@
                         <p class="text_preview">
                             @post.Message
                         </p>
-                        <button href="#">Go to Post</button>
+                        <button type="button" onclick="window.location.href='/posts/@post.Id'">Go to Post</button>
                     </div>
                 </li>
             }
