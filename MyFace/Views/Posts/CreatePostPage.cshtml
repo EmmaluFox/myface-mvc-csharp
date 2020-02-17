@@ -1,24 +1,19 @@
-﻿
-@model MyFace.Models.View.PostsViewModel
+﻿@model MyFace.Models.View.PostsViewModel
 @{
     Layout = "_Layout";
-   
+
 }
 
 <h1>MyFace New Post</h1>
 <article class="container">
-    <form method="post" action = "/posts/create">
-        
-        @{
-                                            
-        }
+    <form method="post" action="/posts/create">
         <label for="UserId">ID:</label><br>
-        <input type = "number" name = "UserId" id = "UserId"/><br/>
+        <input type="number" name="UserId" id="UserId"/><br/>
         <label for="message">Post:</label><br>
         <textarea name = "message" id = "message"></textarea><br/>
         <label for="imageUrl">Image Url:</label><br/>
         <input type="text" id="imageUrl" name="imageUrl" placeholder="Image Url..."/><br/>
         <input type="submit" value="Submit">
     </form>
- 
+
 </article>

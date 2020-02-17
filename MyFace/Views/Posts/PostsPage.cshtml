@@ -1,24 +1,19 @@
-﻿@using System.Collections
-@using MyFace.Controllers
-@using MyFace.Models.Database
-@using MyFace.Models.Request
-@using MyFace.Models.View
-@using MyFace.Repositories
-@model MyFace.Models.View.PostsViewModel
+﻿@model MyFace.Models.View.PostsViewModel
 
 @{
     Layout = "_Layout";
 
 
-} 
-    <h1>MyFace Posts</h1>
+}
+<h1>MyFace Posts</h1>
 <article class="all_posts_container">
     <ol>
         @{
-            <a href="/posts/create"><button type = "button">New Post</button></a> 
+            <a href="/posts/create">
+                <button type="button">New Post</button>
+            </a>
             foreach (var post in Model.Posts)
             {
-                
                 <li>
                     <div class="post_container">
                         <h2 class="post_title">Posted by @post.PostedBy.DisplayName on @post.PostedAt.Date.ToShortDateString()</h2>
@@ -30,11 +25,10 @@
                     </div>
                 </li>
             }
-           
-           
+
+
         }
     </ol>
-    
 
 
 </article>
