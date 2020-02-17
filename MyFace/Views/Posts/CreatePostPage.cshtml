@@ -1,21 +1,25 @@
-﻿@using MyFace.Models.Request
+﻿@using System.Data.Entity
+@using MyFace.Models.Database
+@using MyFace.Models.Request
 @using MyFace.Models.View
 @{
     Layout = "_Layout";
-    CreatePostRequestModel createPostRequestModel = new CreatePostRequestModel();
-    var message = createPostRequestModel.Message;
-    var id = createPostRequestModel.UserId;
-    var image = createPostRequestModel.ImageUrl;
-   
+
+    Post CreatePost()
+    {
+        Post newPost = new Post();
+        return newPost();
+    }
 }
 
 <h1>MyFace New Post</h1>
 <article class="container">
-<form action="#">
-  <label for="userID">User ID:</label><br>
-    <input type="text" id="userID" name="userID" value="username"><br>
-    <label for="message">Post</label><br>
-  <textarea name = "message" id = "message"></textarea>
-  <input type="submit" value="Submit">
-</form>
+    <form>
+        <label for="message">Post:</label><br>
+        <textarea name = "message" id = "message"></textarea><br/>
+        <label for="imageUrl">Image Url:</label><br/>
+        <input type="text" id="imageUrl" name="imageUrl" value="Image Url..." /><br/>
+        <input type="submit" value="Submit">
+    </form>
+ 
 </article>

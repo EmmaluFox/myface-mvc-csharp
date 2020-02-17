@@ -15,5 +15,7 @@ namespace MyFace.Models.Database
         public DateTime PostedAt { get; set; }
         public User PostedBy { get; set; }
         public IEnumerable<Interaction> Interactions { get; set; } = new List<Interaction>();
+        
     }
+    
 }
