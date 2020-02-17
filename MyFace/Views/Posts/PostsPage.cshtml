@@ -1,5 +1,37 @@
-﻿@model MyFace.Models.View.PostsViewModel
+﻿@using MyFace.Controllers
+@using MyFace.Models.Database
+@using MyFace.Repositories
+@model MyFace.Models.View.PostsViewModel
 
 @{
     Layout = "_Layout";
+    List<Post> postsList = new List<Post>();
+    Post testPost = new Post();
+    testPost.ImageUrl = "https://images.unsplash.com/photo-1581300134629-4c3a06a31948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80";
+    postsList.Add(testPost);
 }
+    <h1>MyFace Posts</h1>
+<article class="all_posts_container">
+    <ol>
+        @{
+            foreach (var post in postsList)
+            {
+                <li>
+                    <div class="post_container">
+                        <h2 class="post_title"></h2>
+                        <img class="post_image" src=@post.ImageUrl alt="Cat"/>
+                        <p class="text_preview">
+                            је једноставно модел текста који се користи у штампарској и словослагачкој индустрији. Lorem ipsum је био стандард за модел текста још од 1500. године, када је непознати штампар узео кутију са словима и сложио их како би направио узорак књиге. Не само што је овај модел опстао пет векова, него је чак почео да се користи и у електронским медијима, непроменивши се. Популаризован је шездесетих година двадесетог века з
+                        </p>
+                        <button href="#">Go to Post</button>
+                    </div>
+                </li>
+            }
+            //foreach (var post in posts.PostsPage()) ;
+           
+        }
+    </ol>
+    
+
+
+</article>
