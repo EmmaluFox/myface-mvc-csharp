@@ -4,12 +4,12 @@
     Layout = "_Layout";
 }
 <h1>MyFace Users</h1>
+<button action = "/users/createuser">Create New User</button>
 <article style="column-count: 3">
     @foreach (var user in Model.Users)
     {
-            
         <h2>@user.DisplayName<br/>
-            <img src = "@user.ProfileImageUrl" alt="Profile Image"/></h2>
-        
+            <a href = "/users/@user.Id"><img src = "@user.ProfileImageUrl" alt="Profile Image"/></a> </h2>
+
     }
 </article>
