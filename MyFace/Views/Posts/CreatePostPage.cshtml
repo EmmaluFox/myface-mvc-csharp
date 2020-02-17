@@ -1,18 +1,8 @@
-﻿@using System.Data.Entity
-@using System.Net.Http
-@using Microsoft.AspNetCore.Mvc.Rendering
-@using Microsoft.EntityFrameworkCore
-@using MyFace.Controllers
-@using MyFace.Models.Database
-@using MyFace.Models.Request
-@using MyFace.Models.View
-@using MyFace.Repositories
+﻿
 @model MyFace.Models.View.PostsViewModel
 @{
     Layout = "_Layout";
-    CreatePostRequestModel createPostRequestModel = new CreatePostRequestModel();
-    PostsController postsController = new PostsController(new PostsRepo(new MyFaceDbContext(new DbContextOptions<MyFaceDbContext>())), new UsersRepo(new MyFaceDbContext(new DbContextOptions<MyFaceDbContext>())), new InteractionsRepo(new MyFaceDbContext(new DbContextOptions<MyFaceDbContext>())) );
-    
+   
 }
 
 <h1>MyFace New Post</h1>

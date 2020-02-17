@@ -21,7 +21,7 @@
                 
                 <li>
                     <div class="post_container">
-                        <h2 class="post_title">@post.PostedBy.DisplayName</h2>
+                        <h2 class="post_title">Posted by @post.PostedBy.DisplayName on @post.PostedAt.Date.ToShortDateString()</h2>
                         <img class="post_image" src=@post.ImageUrl alt="">
                         <p class="text_preview">
                             @post.Message

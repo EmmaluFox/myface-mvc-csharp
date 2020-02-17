@@ -3,3 +3,13 @@
 @{
     Layout = "_Layout";
 }
+<h1>MyFace Users</h1>
+<article style="column-count: 3">
+    @foreach (var user in Model.Users)
+    {
+            
+        <h2>@user.DisplayName<br/>
+            <img src = "@user.ProfileImageUrl" alt="Profile Image"/></h2>
+        
+    }
+</article>
