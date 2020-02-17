@@ -1,5 +1,8 @@
-﻿@using MyFace.Controllers
+﻿@using System.Collections
+@using MyFace.Controllers
 @using MyFace.Models.Database
+@using MyFace.Models.Request
+@using MyFace.Models.View
 @using MyFace.Repositories
 @model MyFace.Models.View.PostsViewModel
 
@@ -15,17 +18,21 @@
     testPost2.Message = "Kitten!";
     postsList.Add(testPost);
     postsList.Add(testPost2);
+    
+    
 } 
     <h1>MyFace Posts</h1>
 <article class="all_posts_container">
     <ol>
         @{
+            <a href="/posts/create"><button type = "button">New Post</button></a> 
             foreach (var post in postsList)
             {
+                
                 <li>
                     <div class="post_container">
-                        <h2 class="post_title"></h2>
-                        <img class="post_image" src=@post.ImageUrl alt="Cat"/>
+                        <h2 class="post_title">@post.PostedBy</h2>
+                        <img class="post_image" src=@post.ImageUrl alt="">
                         <p class="text_preview">
                             @post.Message
                         </p>

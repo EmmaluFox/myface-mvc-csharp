@@ -1,3 +1,21 @@
-﻿@{
+﻿@using MyFace.Models.Request
+@using MyFace.Models.View
+@{
     Layout = "_Layout";
+    CreatePostRequestModel createPostRequestModel = new CreatePostRequestModel();
+    var message = createPostRequestModel.Message;
+    var id = createPostRequestModel.UserId;
+    var image = createPostRequestModel.ImageUrl;
+   
 }
+
+<h1>MyFace New Post</h1>
+<article class="container">
+<form action="#">
+  <label for="userID">User ID:</label><br>
+    <input type="text" id="userID" name="userID" value="username"><br>
+    <label for="message">Post</label><br>
+  <textarea name = "message" id = "message"></textarea>
+  <input type="submit" value="Submit">
+</form>
+</article>
