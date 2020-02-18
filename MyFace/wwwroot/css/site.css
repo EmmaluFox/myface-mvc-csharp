@@ -1,13 +1,38 @@
 
 * {
     display: flex;
+    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: aliceblue;
     color: teal;
     font-family: Consolas;
+    font-size: 14pt;
+    flex-direction: column;
 }
+.all_posts_container {
+    
+}
+
+
+.navbar-brand {
+    font-size: 2.5rem;
+}
+.navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+   flex-wrap: nowrap;
+    align-items: flex-start;
+}
+.nav-item {
+    padding-left: 0;
+    padding-right: 0.7rem;
+}
+
 button {
     border: none;
     border-radius: 2px;
