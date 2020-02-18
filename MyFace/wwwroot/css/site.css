@@ -1,0 +1,28 @@
+
+* {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    color: teal;
+    font-family: Consolas;
+}
+button {
+    border: none;
+    border-radius: 2px;
+    color: seagreen;
+    background-color: ghostwhite;
+    font-weight: bold;
+    
+}
+
+.create_button {
+    color: ghostwhite;
+    background-color: darkseagreen;
+}
+
+.post_image {
+    
+    width: 90vw;
+}
