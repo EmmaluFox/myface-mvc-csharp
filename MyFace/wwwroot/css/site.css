@@ -1,25 +1,42 @@
 
 * {
+            /*
+            #d50b53 - raspberry
+            #f4f3f4 - pale smoke
+            #a882c1 - pale berry
+            #824ca7 - blueberry
+            #b9c406 - lime
+            */
+
     display: flex;
-    
+    text-decoration: none;
+    background-color: #dbb4da;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
-    color: teal;
-    font-family: Consolas;
+    color: #f4f3f4;
+    font-family: "Candara Light";
     font-size: 14pt;
     flex-direction: column;
 }
+
 .all_posts_container {
-    
+    width: 90vw;
+    align-items: center;
 }
 
+.post_box{
+}
 
 .navbar-brand {
     font-size: 2.5rem;
+    color: #f4f3f4;
+    background-color: #d50b53;
+    width: 100vw;
+    font-family: "Julietta Signature", cursive;
 }
 .navbar-nav {
+    color: #b9c406;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -36,15 +53,15 @@
 button {
     border: none;
     border-radius: 2px;
-    color: seagreen;
-    background-color: ghostwhite;
+    color: #f4f3f4;
+    background-color: #d50b53;
     font-weight: bold;
     
 }
 
 .create_button {
-    color: ghostwhite;
-    background-color: darkseagreen;
+    color: #f4f3f4;
+    background-color: #d50b53;
 }
 
 .post_image {
