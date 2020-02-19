@@ -9,13 +9,13 @@
             */
 
     display: flex;
-    text-decoration: none;
-    box-sizing: inherit;
     
-    color: #f4f3f4;
-    font-family: "Candara Light", fantasy;
-    font-size: 14pt;
+    box-sizing: inherit;
     flex-direction: column;
+}
+a:-webkit-any-link {
+    text-decoration: none;
+    color: inherit;
 }
 /*Navigation*/
 
@@ -30,7 +30,7 @@
     font-family: Bahnschrift, fantasy;
 }
 .navbar-nav {
-    color: #b9c406;
+    color: #f4f3f4;
     background-color: #d50b53;
     flex-direction: row;
     justify-content: space-around;
@@ -46,6 +46,7 @@
     align-content: stretch;
     width: 98%;
     background-color: #f4f3f4;
+    color: #f4f3f4;
     padding-left: 0px;
     margin-left: -20px;
 
@@ -75,17 +76,23 @@ button {
 
 .modal {
     display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    width: 60%;
-    height: 80%;
+    border-radius: 5%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 500px;
     overflow: auto;
+    background-color: lightpink;
+    color: #d50b53;
 }
 
-.writeNewPost {
+article#writeNewPost.modal {
     
 }
+
+
+
 
 
 
@@ -98,6 +105,9 @@ button {
 .body {
     background-color: #d50b53;
     width: 98%;
+    color: #f4f3f4;
+    font-family: "Candara Light", fantasy;
+    font-size: 14pt;
 
 }
 .all_posts_container {
