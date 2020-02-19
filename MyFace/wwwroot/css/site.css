@@ -39,15 +39,15 @@
     align-items: center;
     width: 98%;
     padding: 10px;
-    margin: 0px;
+    margin: -10px;
 }
 .navbar {
     flex-wrap: wrap;
     align-content: stretch;
     width: 98%;
     background-color: #f4f3f4;
-    padding-left: 10px;
-    margin-left: -10px;
+    padding-left: 0px;
+    margin-left: -20px;
 
 }
 .nav-item {
@@ -69,6 +69,22 @@ button {
 .create_button {
     color: #f4f3f4;
     background-color: #d50b53;
+}
+
+/*Modals*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    width: 60%;
+    height: 80%;
+    overflow: auto;
+}
+
+.writeNewPost {
+    
 }
 
 
