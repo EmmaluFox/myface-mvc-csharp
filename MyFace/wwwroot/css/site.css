@@ -76,12 +76,13 @@ button {
 
 .modal {
     display: none;
+    padding: 10px;
     border-radius: 5%;
     align-self: center;
     align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 500px;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
     overflow: auto;
     background-color: lightpink;
     color: #d50b53;
