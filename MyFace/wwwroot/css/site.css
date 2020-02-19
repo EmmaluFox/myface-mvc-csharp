@@ -1,28 +1,96 @@
 
 * {
+            /*
+            #d50b53 - raspberry
+            #f4f3f4 - pale smoke
+            #a882c1 - pale berry
+            #824ca7 - blueberry
+            #b9c406 - lime
+            */
+
     display: flex;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: aliceblue;
-    color: teal;
-    font-family: Consolas;
+    text-decoration: none;
+    box-sizing: inherit;
+    
+    color: #f4f3f4;
+    font-family: "Candara Light";
+    font-size: 14pt;
+    flex-direction: column;
 }
+.body {
+    background-color: #d50b53;
+    width: 100%;
+    
+}
+.all_posts_container {
+    background: url(https://images.unsplash.com/photo-1559251606-c623743a6d76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    width: 100%;
+    padding: 10px;
+    margin: -10px;
+    align-items: center;
+}
+
+.post_box{
+ 
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    color: #f4f3f4;
+    background-color: #d50b53;
+    width: 100%;
+    padding: 10px;
+    margin: -10px -10px -1px;
+    align-content: flex-start;
+    font-family: "Julietta Signature", cursive;
+}
+.navbar-nav {
+    color: #b9c406;
+    background-color: #d50b53;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    height: 100px;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: -10px;
+}
+.navbar {
+   flex-wrap: wrap;
+    align-content: stretch;
+    width: 100%;
+    background-color: #f4f3f4;
+    padding-left: 10px;
+    margin-left: -10px;
+    
+}
+.nav-item {
+ 
+  
+}
+
 button {
     border: none;
     border-radius: 2px;
-    color: seagreen;
-    background-color: ghostwhite;
+    color: #f4f3f4;
+    background-color: #d50b53;
     font-weight: bold;
     
 }
 
 .create_button {
-    color: ghostwhite;
-    background-color: darkseagreen;
+    color: #f4f3f4;
+    background-color: #d50b53;
 }
 
 .post_image {
     
     width: 90vw;
+}
+
+.footer {
+    margin-top: 5px;
+    padding-top: 5px;
+    
 }
