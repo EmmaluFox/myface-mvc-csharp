@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Comfortaa|Fredericka+the+Great|Julius+Sans+One|Kodchasan|League+Script|Poiret+One|Quattrocento+Sans|Source+Code+Pro:200|Stint+Ultra+Expanded|Work+Sans:100&display=swap');
 
 * {
             /*
@@ -13,21 +14,31 @@
     box-sizing: inherit;
     flex-direction: column;
 }
+
+
 a:-webkit-any-link {
     text-decoration: none;
     color: inherit;
 }
 /*Navigation*/
 
-.navbar-brand {
+h1 {
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    font-family: Fredericka the Great, sans-serif;
+    color: #d50b53;
     font-size: 2.5rem;
+}
+.navbar-brand {
+    font-size: 3rem;
     color: #f4f3f4;
     background-color: #d50b53;
     width: 98%;
-    padding: 1px 20px 1px 20px;
-    margin: -15px -8px -1px;
+    padding: 1px 20px 20px 20px;
+    margin: -15px -8px -8px;
     align-content: flex-start;
-    font-family: Bahnschrift, fantasy;
+    font-family: Fredericka the Great, cursive;
 }
 .navbar-nav {
     color: #f4f3f4;
@@ -44,7 +55,11 @@ a:-webkit-any-link {
 .navbar {
     flex-wrap: wrap;
     align-content: stretch;
+    justify-content: center;
+    justify-items: center;
     width: 98%;
+    height: 110px;
+    font-size: 2rem;
     background-color: #f4f3f4;
     color: #f4f3f4;
     padding-left: 0px;
@@ -88,11 +103,16 @@ button {
     color: #d50b53;
 }
 
-article#writeNewPost.modal {
-    
+/*Forms*/
+input {
+    width: 90%;
+    padding: 5px;
 }
-
-
+textarea {
+    width: 90%;
+    height: auto;
+    padding: 5px;
+}
 
 
 
@@ -107,10 +127,11 @@ article#writeNewPost.modal {
     background-color: #d50b53;
     width: 98%;
     color: #f4f3f4;
-    font-family: "Candara Light", fantasy;
+    font-family: Work Sans, sans-serif;
     font-size: 14pt;
 
 }
+
 .all_posts_container {
     background: url(https://images.unsplash.com/photo-1559251606-c623743a6d76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     width: 98%;
