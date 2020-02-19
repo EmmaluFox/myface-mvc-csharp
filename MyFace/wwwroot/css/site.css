@@ -13,36 +13,21 @@
     box-sizing: inherit;
     
     color: #f4f3f4;
-    font-family: "Candara Light";
+    font-family: "Candara Light", fantasy;
     font-size: 14pt;
     flex-direction: column;
 }
-.body {
-    background-color: #d50b53;
-    width: 100%;
-    
-}
-.all_posts_container {
-    background: url(https://images.unsplash.com/photo-1559251606-c623743a6d76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
-    width: 100%;
-    padding: 10px;
-    margin: -10px;
-    align-items: center;
-}
-
-.post_box{
- 
-}
+/*Navigation*/
 
 .navbar-brand {
     font-size: 2.5rem;
     color: #f4f3f4;
     background-color: #d50b53;
-    width: 100%;
-    padding: 10px;
-    margin: -10px -10px -1px;
+    width: 98%;
+    padding: 1px 20px 1px 20px;
+    margin: -15px -8px -1px;
     align-content: flex-start;
-    font-family: "Julietta Signature", cursive;
+    font-family: Bahnschrift, fantasy;
 }
 .navbar-nav {
     color: #b9c406;
@@ -50,33 +35,35 @@
     flex-direction: row;
     justify-content: space-around;
     justify-items: center;
-    height: 100px;
+    height: 40px;
     align-items: center;
-    width: 100%;
+    width: 98%;
     padding: 10px;
-    margin: -10px;
+    margin: 0px;
 }
 .navbar {
-   flex-wrap: wrap;
+    flex-wrap: wrap;
     align-content: stretch;
-    width: 100%;
+    width: 98%;
     background-color: #f4f3f4;
     padding-left: 10px;
     margin-left: -10px;
-    
+
 }
 .nav-item {
- 
-  
+
+
 }
 
+
+/*Buttons*/
 button {
     border: none;
     border-radius: 2px;
     color: #f4f3f4;
     background-color: #d50b53;
     font-weight: bold;
-    
+
 }
 
 .create_button {
@@ -84,11 +71,33 @@ button {
     background-color: #d50b53;
 }
 
+
+
+/*Content*/
 .post_image {
     
     width: 90vw;
 }
 
+.body {
+    background-color: #d50b53;
+    width: 98%;
+
+}
+.all_posts_container {
+    background: url(https://images.unsplash.com/photo-1559251606-c623743a6d76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    width: 98%;
+    padding: 10px;
+    margin: -10px;
+    align-items: center;
+  
+}
+
+.post_box{
+    padding-inline-start: 0;
+}
+
+/*Footer*/
 .footer {
     margin-top: 5px;
     padding-top: 5px;
