@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Comfortaa|Fredericka+the+Great|Julius+Sans+One|Kodchasan|League+Script|Poiret+One|Quattrocento+Sans|Source+Code+Pro:200|Stint+Ultra+Expanded|Work+Sans:100&display=swap');
+
+
 a:-webkit-any-link {
     text-decoration: unset;
     color: unset;
@@ -19,6 +21,7 @@ a:-webkit-any-link {
     box-sizing: inherit;
     flex-direction: column;
     align-self: flex-start;
+    font-family: Work Sans, sans-serif;
 }
 
 /*Navigation*/
@@ -38,7 +41,7 @@ h1 {
     margin: 0;
     font-family: Fredericka the Great, cursive;
     color: #d50b53;
-    font-size: 2.5rem;
+    font-size: 10vw;
     
 }
 .navbar {
@@ -51,6 +54,62 @@ h1 {
     font-size: 12vw;
     display: inline-flex;
     padding: 0 10%;
+}
+.nav-item:hover {
+    font-weight: bolder;
+}
+
+/*Buttons*/
+button {
+    border: 2px solid #f4f3f4;
+    border-radius: 20%;
+    padding: 5px;
+    font-weight: bold;
+    color: #d50b53;
+    background-color: lightpink;
+   
+
+}
+
+.create_button {
+    position: fixed;
+    top: 8vw;
+    right: 10vw;
+    justify-content: flex-end;
+    font-size: 4vw;
+    border: 0.5vw solid #f4f3f4;
+    padding: 2vw;
+    border-radius: 50%;
+    
+}
+
+
+
+/*Forms*/
+input {
+    width: 90%;
+    padding: 5px;
+}
+textarea {
+    width: 90%;
+    height: auto;
+    padding: 5px;
+}
+
+
+/*Forms*/
+input {
+    width: 90%;
+    padding: 5px;
+    font-size: 4vw;
+    font-weight: bold;
+}
+textarea {
+    width: 90%;
+    height: auto;
+    padding: 5px;
+    font-size: 4vw;
+    font-weight: bold;
 }
 
 /*Modals*/
@@ -86,7 +145,7 @@ ol {
     width: 100vw;
     color: #f4f3f4;
     font-family: Work Sans, sans-serif;
-    font-size: 0.5rem;
+    font-size: 3vw;
 
 }
 .all_posts_container {
@@ -94,15 +153,19 @@ ol {
     flex-direction: column;
     align-items: center;
     justify-items: flex-start;
+    font-size: 3vw;
 }
 .posts_list {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap-reverse;
+    font-size: 3vw;
 }
 
 .post_container {
+    font-size: 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
