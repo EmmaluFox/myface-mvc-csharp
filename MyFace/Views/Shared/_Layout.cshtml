@@ -6,20 +6,15 @@
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/css/site.css"/>
 </head>
+<div class = "flex_container">
 <body class = "body">
 <header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container">
+    <nav class="navbar">
+        <div class="flex_container">
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MyFace</a>
-            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Posts" asp-action="PostsPage">Posts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="UsersPage">Users</a>
-                    </li>
-                </ul>
+            <div class="navbar-navbar">
+                <a class="nav-item" asp-area="" asp-controller="Posts" asp-action="PostsPage">Posts</a>
+                <a class="nav-item" asp-area="" asp-controller="Users" asp-action="UsersPage">Users</a>
             </div>
         </div>
     </nav>
@@ -39,4 +34,5 @@
 <script src="~/js/site.js" asp-append-version="true"></script>
 @RenderSection("Scripts", false)
 </body>
+</div>
 </html>

@@ -1,90 +1,59 @@
 @import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Comfortaa|Fredericka+the+Great|Julius+Sans+One|Kodchasan|League+Script|Poiret+One|Quattrocento+Sans|Source+Code+Pro:200|Stint+Ultra+Expanded|Work+Sans:100&display=swap');
-
-* {
-            /*
+a:-webkit-any-link {
+    text-decoration: unset;
+    color: unset;
+}
+.flex_container{
+    /*
             #d50b53 - raspberry
             #f4f3f4 - pale smoke
             #a882c1 - pale berry
             #824ca7 - blueberry
             #b9c406 - lime
             */
-
+    background: url(https://images.unsplash.com/photo-1559251606-c623743a6d76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    border: 5px #d50b53;
     display: flex;
-    
+    width: inherit;
+    margin-left: -5px;
     box-sizing: inherit;
     flex-direction: column;
+    align-self: flex-start;
 }
 
-
-a:-webkit-any-link {
-    text-decoration: none;
-    color: inherit;
-}
 /*Navigation*/
-
-h1 {
-    padding: 0;
-    margin: 0;
-    height: 30px;
-    font-family: Fredericka the Great, sans-serif;
-    color: #d50b53;
-    font-size: 2.5rem;
-}
 .navbar-brand {
     font-size: 3rem;
     color: #f4f3f4;
     background-color: #d50b53;
-    width: 98%;
-    padding: 1px 20px 20px 20px;
-    margin: -15px -8px -8px;
+    flex-direction: row;
+    border: none;
+    width: inherit;
+    justify-content: flex-start;
     align-content: flex-start;
     font-family: Fredericka the Great, cursive;
 }
-.navbar-nav {
-    color: #f4f3f4;
-    background-color: #d50b53;
-    flex-direction: row;
-    justify-content: space-around;
-    justify-items: center;
-    height: 40px;
-    align-items: center;
-    width: 98%;
-    padding: 10px;
-    margin: -10px;
+h1 {
+    padding: 0;
+    margin: 0;
+    font-family: Fredericka the Great, cursive;
+    color: #d50b53;
+    font-size: 2.5rem;
 }
 .navbar {
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: center;
-    justify-items: center;
-    width: 98%;
-    height: 110px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: inherit;
     font-size: 2rem;
-    background-color: #f4f3f4;
+    background-color: #d50b53;
     color: #f4f3f4;
-    padding-left: 0px;
-    margin-left: -20px;
-
 }
 .nav-item {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    justify-content: space-between;
 
-
-}
-
-
-/*Buttons*/
-button {
-    border: none;
-    border-radius: 2px;
-    color: #f4f3f4;
-    background-color: #d50b53;
-    font-weight: bold;
-
-}
-
-.create_button {
-    color: #f4f3f4;
-    background-color: #d50b53;
 }
 
 /*Modals*/
@@ -93,61 +62,36 @@ button {
     display: none;
     padding: 10px;
     border-radius: 5%;
-    align-self: center;
-    align-items: center;
-    justify-content: flex-start;
-    width: auto;
-    height: auto;
+    width: 75vw;
+    justify-content: center;
     overflow: auto;
     background-color: lightpink;
     color: #d50b53;
 }
 
-/*Forms*/
-input {
-    width: 90%;
-    padding: 5px;
-}
-textarea {
-    width: 90%;
-    height: auto;
-    padding: 5px;
-}
-
-
-
-
 /*Content*/
-.post_image {
-    
-    width: 90vw;
-}
-
-.body {
-    background-color: #d50b53;
-    width: 98%;
-    color: #f4f3f4;
-    font-family: Work Sans, sans-serif;
-    font-size: 14pt;
-
-}
-
-.all_posts_container {
-    background: url(https://images.unsplash.com/photo-1559251606-c623743a6d76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
-    width: 98%;
-    padding: 10px;
-    margin: -10px;
-    align-items: center;
-  
-}
-
-.post_box{
+ol {
+    display: flex;
+    flex-direction: column-reverse;
+    list-style-type: decimal;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     padding-inline-start: 0;
 }
+.post_image {
 
-/*Footer*/
-.footer {
-    margin-top: 5px;
-    padding-top: 5px;
-    
+    width: 80vw;
+}
+.body {
+    background-image: url(https://images.unsplash.com/photo-1559251606-c623743a6d76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    width: 100vw;
+    color: #f4f3f4;
+    font-family: Work Sans, sans-serif;
+    font-size: 0.5rem;
+
+}
+.all_posts_container {
+  
 }
